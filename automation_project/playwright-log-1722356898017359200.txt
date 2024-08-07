@@ -1,0 +1,60 @@
+{"level":30,"time":"2024-07-30T16:28:19.003Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Listening on 52546"}
+(node:18868) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-07-30T16:28:19.462Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:19.463Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:19.468Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:19.468Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:19.478Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-07-30T16:28:19.828Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Adding browser to stack: chromium, version: 127.0.6533.17"}
+{"level":30,"time":"2024-07-30T16:28:19.829Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-07-30T16:28:19.829Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-07-30T16:28:19.838Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-07-30T16:28:19.839Z","pid":18868,"hostname":"Daniel_A_Note","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-07-30T16:28:19.861Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active context"}
+{"level":30,"time":"2024-07-30T16:28:20.119Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Video path: undefined"}
+{"level":30,"time":"2024-07-30T16:28:20.119Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active page"}
+{"level":30,"time":"2024-07-30T16:28:20.960Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method newPage"}
+{"level":30,"time":"2024-07-30T16:28:20.966Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-07-30T16:28:20.966Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Strict mode is enabled, find Locator with css=#signup #name in page."}
+{"level":30,"time":"2024-07-30T16:28:21.031Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method fillText"}
+{"level":30,"time":"2024-07-30T16:28:21.037Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-07-30T16:28:21.037Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Strict mode is enabled, find Locator with css=#signup #email in page."}
+{"level":30,"time":"2024-07-30T16:28:21.069Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method fillText"}
+{"level":30,"time":"2024-07-30T16:28:21.074Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-07-30T16:28:21.074Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Strict mode is enabled, find Locator with css=#signup #document in page."}
+{"level":30,"time":"2024-07-30T16:28:21.167Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method typeText"}
+{"level":30,"time":"2024-07-30T16:28:21.172Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method click"}
+{"level":30,"time":"2024-07-30T16:28:21.173Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Strict mode is enabled, find Locator with css=#signup [type=submit] in page."}
+{"level":30,"time":"2024-07-30T16:28:21.225Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method click"}
+{"level":30,"time":"2024-07-30T16:28:28.235Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getText"}
+{"level":30,"time":"2024-07-30T16:28:28.235Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Strict mode is enabled, find Locator with form .notice in page."}
+{"level":30,"time":"2024-07-30T16:28:28.281Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Retrieved text for element form .notice containing Por favor, informe o seu melhor e-mail"}
+{"level":30,"time":"2024-07-30T16:28:28.281Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getText"}
+{"level":30,"time":"2024-07-30T16:28:28.291Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.297Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.300Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.304Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.307Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active context"}
+{"level":30,"time":"2024-07-30T16:28:28.307Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changing current active page: page=3e6820fe-a92e-4a24-a3ce-e43c13412dbe"}
+{"level":30,"time":"2024-07-30T16:28:28.307Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active page"}
+{"level":30,"time":"2024-07-30T16:28:28.317Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.320Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.324Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-07-30T16:28:28.325Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-07-30T16:28:28.330Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-07-30T16:28:28.331Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-07-30T16:28:28.334Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changing current active page: page=3e6820fe-a92e-4a24-a3ce-e43c13412dbe"}
+{"level":30,"time":"2024-07-30T16:28:28.334Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active page"}
+{"level":30,"time":"2024-07-30T16:28:28.340Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.343Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.346Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active context"}
+{"level":30,"time":"2024-07-30T16:28:28.346Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changing current active page: page=3e6820fe-a92e-4a24-a3ce-e43c13412dbe"}
+{"level":30,"time":"2024-07-30T16:28:28.346Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Changed active page"}
+{"level":30,"time":"2024-07-30T16:28:28.348Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-07-30T16:28:28.369Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Removed page=c76b047b-0593-4f49-bff3-33bd95d4a759 from context=91215b99-9f81-486a-99a8-4149e3c73124 page stack"}
+{"level":30,"time":"2024-07-30T16:28:28.390Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-07-30T16:28:28.402Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:28.402Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-30T16:28:30.416Z","pid":18868,"hostname":"Daniel_A_Note","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-07-30T16:28:30.532Z","pid":18868,"hostname":"Daniel_A_Note","msg":"End of node method closeAllBrowsers"}

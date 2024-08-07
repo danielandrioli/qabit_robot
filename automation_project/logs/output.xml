@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-30T13:40:14.554691" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\vscode_projects\qax_smartbit_auto_project\tests">
+<suite id="s1-s1" name="Signup" source="C:\vscode_projects\qax_smartbit_auto_project\tests\signup.robot">
+<test id="s1-s1-t1" name="Validação da criação do cadastro" line="17">
+<kw name="Generate Fake Account" owner="Account">
+<msg time="2024-07-30T13:40:15.487381" level="INFO">${account} = {'name': 'Fernando Porto', 'email': 'noahcarvalho@example.net', 'cpf': '015.294.863-51'}</msg>
+<var>${account}</var>
+<status status="PASS" start="2024-07-30T13:40:15.487381" elapsed="0.000000"/>
+</kw>
+<kw name="Entrar na página, preencher campos e clicar em 'Cadastrar'">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-07-30T13:40:15.487381" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\vscode_projects\\qax_smartbit_auto_project\\logs\\browser\\traces\\5a71a72e-b2df-49c6-8fd2-07a8f2be2e4a"}</msg>
+<msg time="2024-07-30T13:40:15.644697" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\vscode_projects\\qax_smartbit_auto_project\\logs\\browser\\traces\\5a71a72e-b2df-49c6-8fd2-07a8f2be2e4a"}</msg>
+<arg>chromium</arg>
+<arg>headless=${headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-07-30T13:40:15.487381" elapsed="0.157316"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-07-30T13:40:16.369295" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg time="2024-07-30T13:40:16.369295" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-07-30T13:40:15.644697" elapsed="0.724598"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-30T13:40:16.370293" level="INFO">Fills the text 'Fernando Porto' in the given field.</msg>
+<arg>css=#signup #name</arg>
+<arg>${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:16.369295" elapsed="0.043937"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-30T13:40:16.413232" level="INFO">Fills the text 'noahcarvalho@example.net' in the given field.</msg>
+<arg>css=#signup #email</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:16.413232" elapsed="0.017449"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-07-30T13:40:16.431813" level="INFO">Types the text '015.294.863-51' in the given field.</msg>
+<arg>css=#signup #document</arg>
+<arg>${cpf}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:16.431813" elapsed="0.073841"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-07-30T13:40:16.506653" level="INFO">Clicks the element 'css=#signup [type=submit]'.</msg>
+<arg>css=#signup [type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:16.506653" elapsed="0.055242"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-30T13:40:23.562678" level="INFO">Slept 7 seconds.</msg>
+<arg>7</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-30T13:40:16.561895" elapsed="7.000783"/>
+</kw>
+<arg>${account}[name]</arg>
+<arg>${account}[email]</arg>
+<arg>${account}[cpf]</arg>
+<arg>headless=true</arg>
+<status status="PASS" start="2024-07-30T13:40:15.487381" elapsed="8.075297"/>
+</kw>
+<kw name="Wait For Condition" owner="Browser">
+<kw name="Get Url" owner="Browser">
+<arg>should end with</arg>
+<arg>welcome</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2024-07-30T13:40:23.564843" elapsed="0.009885"/>
+</kw>
+<arg>Url</arg>
+<arg>should end with</arg>
+<arg>welcome</arg>
+<arg>timeout=7</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
+<status status="PASS" start="2024-07-30T13:40:23.564843" elapsed="0.010086"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-07-30T13:40:23.614822" level="INFO">Text: 'Falta pouco para fazer parte da família Smartbit!'</msg>
+<arg>h2</arg>
+<arg>equal</arg>
+<arg>Falta pouco para fazer parte da família Smartbit!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:23.574929" elapsed="0.039893"/>
+</kw>
+<status status="PASS" start="2024-07-30T13:40:15.487381" elapsed="8.127441"/>
+</test>
+<test id="s1-s1-t2" name="Nome não preenchido falha o teste" line="54">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-07-30T13:40:23.656699" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\vscode_projects\\qax_smartbit_auto_project\\logs\\browser\\traces\\f634afd1-094b-4e12-973e-607399dcc322"}</msg>
+<msg time="2024-07-30T13:40:23.884671" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\vscode_projects\\qax_smartbit_auto_project\\logs\\browser\\traces\\f634afd1-094b-4e12-973e-607399dcc322"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-07-30T13:40:23.655386" elapsed="0.229285"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-07-30T13:40:25.028082" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg time="2024-07-30T13:40:25.028082" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-07-30T13:40:23.884671" elapsed="1.143411"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-30T13:40:25.034739" level="INFO">Fills the text 'ja@mendes.com' in the given field.</msg>
+<arg>css=#signup #email</arg>
+<arg>ja@mendes.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.034739" elapsed="0.050728"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-07-30T13:40:25.086467" level="INFO">Types the text '11122233344' in the given field.</msg>
+<arg>css=#signup #document</arg>
+<arg>11122233344</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.086467" elapsed="0.093771"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-07-30T13:40:25.181486" level="INFO">Clicks the element 'css=#signup [type=submit]'.</msg>
+<arg>css=#signup [type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.181275" elapsed="0.054191"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-07-30T13:40:25.594399" level="INFO">Text: 'Por favor informe o seu nome completo'</msg>
+<arg>form .notice</arg>
+<arg>equal</arg>
+<arg>Por favor informe o seu nome completo</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.236470" elapsed="0.357929"/>
+</kw>
+<status status="PASS" start="2024-07-30T13:40:23.652658" elapsed="1.941741"/>
+</test>
+<doc>Pré-cadastro de clientes</doc>
+<status status="PASS" start="2024-07-30T13:40:14.584574" elapsed="11.072183"/>
+</suite>
+<suite id="s1-s2" name="Slogan" source="C:\vscode_projects\qax_smartbit_auto_project\tests\slogan.robot">
+<test id="s1-s2-t1" name="Deve mostrar mensagem no slogan" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-07-30T13:40:25.674550" level="INFO">Switching browser to browser=b3e2c8b7-61b2-4844-9443-1541bb0af478</msg>
+<msg time="2024-07-30T13:40:25.674550" level="INFO">Successfully changed active browser: browser=b3e2c8b7-61b2-4844-9443-1541bb0af478</msg>
+<msg time="2024-07-30T13:40:25.674550" level="INFO">Reusing existing browser with id: browser=b3e2c8b7-61b2-4844-9443-1541bb0af478</msg>
+<arg>browser=chromium</arg>
+<arg>headless=${False}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.674550" elapsed="0.000000"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-07-30T13:40:26.578925" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg time="2024-07-30T13:40:26.578925" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-07-30T13:40:25.674550" elapsed="0.904375"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-07-30T13:40:26.640381" level="INFO">Text: 'Sua Jornada Fitness Começa aqui!'</msg>
+<arg>.headline h2</arg>
+<arg>equal</arg>
+<arg>Sua Jornada Fitness Começa aqui!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-30T13:40:26.578925" elapsed="0.061456"/>
+</kw>
+<status status="PASS" start="2024-07-30T13:40:25.674550" elapsed="0.965831"/>
+</test>
+<doc>Verificações no Slogan da Landing Page</doc>
+<status status="PASS" start="2024-07-30T13:40:25.665451" elapsed="1.063198"/>
+</suite>
+<status status="PASS" start="2024-07-30T13:40:14.554691" elapsed="12.183932"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Signup">Tests.Signup</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Slogan">Tests.Slogan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
